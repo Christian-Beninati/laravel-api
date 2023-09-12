@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TypeProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 // Resource
 Route::apiResource("projects", ProjectController::class);
+
+
+// TypeProject
+Route::get("types/{type}/projects", [TypeProjectController::class, "index"]);
