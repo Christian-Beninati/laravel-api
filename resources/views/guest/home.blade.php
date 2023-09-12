@@ -13,8 +13,6 @@
                     <img class="float-start me-2" src="{{ $project->image }}" alt="{{ $project->title }}">
                     <p class="card-text">{{ $project->description }}</p>
                 </div>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
             </div>
         </div>
     @empty
